@@ -3,7 +3,7 @@ import { InputHTMLAttributes, forwardRef } from "react";
 export interface TextFieldProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string;
   error?: string;
-  helper Text?: string;
+  helperText?: string;
 }
 
 export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(

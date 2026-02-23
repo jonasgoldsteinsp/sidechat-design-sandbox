@@ -6,12 +6,20 @@
 ═══════════════════════════════════════════════════════ */
 
 @theme inline {
-  /* ─── Core Palette ─── */
-  --color-canvas: #F4F1E6;
+  /* ─── Elegant Design System Colors ─── */
+  --color-bg: #0e0e0e;
+  --color-surface: #1a1a1a;
+  --color-surface-raised: #242424;
+  --color-cream: #f5f0e8;
+  --color-cream-dim: #c8c3ba;
+  --color-cream-muted: #7a766e;
+
+  /* ─── Core Palette (Legacy Support) ─── */
+  --color-canvas: #f5f0e8;
   --color-canvas-warm: #F0EDE0;
-  --color-ink: #0F0F0F;
-  --color-ink-soft: #2A2A2A;
-  --color-ink-muted: #6B6860;
+  --color-ink: #0e0e0e;
+  --color-ink-soft: #1a1a1a;
+  --color-ink-muted: #7a766e;
 
   /* ─── Brand Colors ─── */
   --color-mint: #38C798;
@@ -69,13 +77,14 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--color-night-bg);
-  color: var(--text-primary);
-  font-family: var(--font-mono);
-  font-size: 14px;
-  line-height: 1.5;
+  background: var(--color-bg);
+  color: var(--color-cream);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* ─── Typography Utilities ─── */
