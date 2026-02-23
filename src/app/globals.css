@@ -47,8 +47,8 @@
 
   /* ─── Typography ─── */
   --font-display: 'Fraunces', serif;
-  --font-mono: 'Courier Prime', monospace;
-  --font-pixel: 'VT323', monospace;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'DM Sans', sans-serif;
 
   /* ─── Spacing ─── */
   --spacing-xs: 4px;
@@ -90,7 +90,7 @@ body {
 /* ─── Typography Utilities ─── */
 .font-display { font-family: var(--font-display); }
 .font-mono { font-family: var(--font-mono); }
-.font-pixel { font-family: var(--font-pixel); }
+.font-body { font-family: var(--font-body); }
 
 .text-display-xl {
   font-family: var(--font-display);
@@ -137,12 +137,6 @@ body {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-}
-
-.text-pixel {
-  font-family: var(--font-pixel);
-  font-size: 1.1rem;
-  letter-spacing: 0.05em;
 }
 
 /* ─── Scrollbar (Night Operator) ─── */

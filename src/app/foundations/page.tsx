@@ -6,11 +6,13 @@ export default function FoundationsPage() {
   return (
     <Container size="xl" className="py-12">
       <div className="mb-12">
-        <div className="font-pixel text-mint text-sm mb-4">&gt; FOUNDATIONS</div>
-        <h1 className="text-display-lg mb-4">
-          Design <em className="italic text-mint">Foundations</em>
+        <div className="font-mono text-[11px] font-medium tracking-[0.12em] uppercase text-mint mb-6">
+          Foundations
+        </div>
+        <h1 className="font-display text-[clamp(48px,6vw,80px)] font-light leading-[1.08] tracking-[-0.03em] text-cream max-w-[800px] mb-8">
+          Design <em className="italic font-medium text-mint">Foundations</em>
         </h1>
-        <p className="font-mono text-canvas/70 max-w-3xl">
+        <p className="text-[18px] text-cream-muted max-w-[600px] leading-[1.7]">
           Core design elements that form the foundation of the Sidechat design system.
           Color, typography, spacing, and layout principles following Apple HIG standards.
         </p>
@@ -87,26 +89,26 @@ export default function FoundationsPage() {
           <TypeSpecimen
             family="Fraunces"
             role="Display & Headings"
-            weights="Light 300, Regular 400, Semi-Bold 600"
+            weights="Light 300, Regular 400, Medium 500, Semi-Bold 600, Bold 700"
             usage="Headlines, wordmark, hero text, feature titles"
             example="The quick brown fox jumps over the lazy dog"
             className="font-display"
           />
           <TypeSpecimen
-            family="Courier Prime"
-            role="Body & UI"
-            weights="Regular 400, Bold 700, Italic 400"
-            usage="Body text, UI labels, metadata, captions"
+            family="DM Sans"
+            role="Body & UI Text"
+            weights="Light 300, Regular 400, Medium 500, Semi-Bold 600, Bold 700"
+            usage="Body text, UI copy, descriptions, paragraphs"
             example="Sidechat thinks, drafts your memos, organizes your files."
-            className="font-mono"
+            className="font-body"
           />
           <TypeSpecimen
-            family="VT323"
-            role="System & Decorative"
-            weights="Regular 400"
-            usage="CRT screens, retro UI, decorative system text"
+            family="IBM Plex Mono"
+            role="Code & Technical"
+            weights="Light 300, Regular 400, Medium 500"
+            usage="Code snippets, technical labels, monospace data"
             example="> SYSTEM READY_ > LOAD SIDECHAT"
-            className="font-pixel"
+            className="font-mono"
           />
         </div>
 
@@ -201,7 +203,7 @@ function ColorSwatch({
       <div className={`font-mono text-sm font-bold mb-1 ${textLight ? "text-canvas" : "text-ink"}`}>
         {name}
       </div>
-      <div className={`font-pixel text-xs ${textLight ? "text-canvas/80" : "text-ink/80"}`}>
+      <div className={`font-mono text-xs ${textLight ? "text-canvas/80" : "text-ink/80"}`}>
         {hex}
       </div>
       <div className={`font-mono text-xs mt-3 ${textLight ? "text-canvas/70" : "text-ink/70"}`}>
@@ -218,7 +220,7 @@ function ColorBlock({ name, hex }: { name: string; hex: string }) {
   return (
     <div className="aspect-[3/2] rounded-lg p-4 flex flex-col justify-end" style={{ background: hex }}>
       <div className="font-mono text-xs font-bold text-white">{name}</div>
-      <div className="font-pixel text-[10px] text-white/80">{hex}</div>
+      <div className="font-mono text-[10px] text-white/80">{hex}</div>
     </div>
   );
 }
@@ -227,7 +229,7 @@ function DarkColorBlock({ name, value }: { name: string; value: string }) {
   return (
     <div className="aspect-[3/2] rounded-lg p-4 flex flex-col justify-end border border-white/[0.06]" style={{ background: value }}>
       <div className="font-mono text-xs font-bold text-canvas">{name}</div>
-      <div className="font-pixel text-[10px] text-canvas/60">{value}</div>
+      <div className="font-mono text-[10px] text-canvas/60">{value}</div>
     </div>
   );
 }
@@ -302,7 +304,7 @@ function SpacingBar({ label, value }: { label: string; value: string }) {
         {label}
       </span>
       <div className="h-7 bg-mint/40 border border-mint/60 rounded" style={{ width: value }} />
-      <span className="font-pixel text-xs text-canvas/40">{value}</span>
+      <span className="font-mono text-xs text-canvas/40">{value}</span>
     </div>
   );
 }

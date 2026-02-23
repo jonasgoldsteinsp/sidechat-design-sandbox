@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Courier_Prime, VT323 } from "next/font/google";
+import { Fraunces, DM_Sans, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/navigation/Header";
 import { Sidebar } from "@/components/navigation/Sidebar";
@@ -7,26 +7,25 @@ import { Sidebar } from "@/components/navigation/Sidebar";
 const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["300", "400", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
-const courierPrime = Courier_Prime({
-  variable: "--font-courier",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["400", "700"],
-  style: ["normal", "italic"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const vt323 = VT323({
-  variable: "--font-vt323",
+const ibmPlexMono = IBM_Plex_Mono({
+  variable: "--font-ibm-plex",
   subsets: ["latin"],
-  weight: ["400"],
+  weight: ["300", "400", "500"],
 });
 
 export const metadata: Metadata = {
-  title: "Sidechat Design System — Night Operator Edition",
-  description: "Comprehensive design system following Apple HIG principles with retro-computing aesthetics",
+  title: "Sidechat Design System — The Editor",
+  description: "A comprehensive design system rooted in editorial warmth and machine precision",
 };
 
 export default function RootLayout({
@@ -41,16 +40,16 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body
-        className={`${fraunces.variable} ${courierPrime.variable} ${vt323.variable} antialiased`}
+        className={`${fraunces.variable} ${dmSans.variable} ${ibmPlexMono.variable} antialiased`}
         style={{
-          fontFamily: "var(--font-courier)",
+          fontFamily: "var(--font-dm-sans)",
         }}
       >
-        <div className="flex flex-col h-screen overflow-hidden">
+        <div className="flex flex-col min-h-screen">
           <Header />
-          <div className="flex flex-1 overflow-hidden">
+          <div className="flex flex-1">
             <Sidebar />
-            <main className="flex-1 overflow-y-auto">
+            <main className="flex-1">
               {children}
             </main>
           </div>

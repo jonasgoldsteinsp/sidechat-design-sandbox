@@ -72,9 +72,9 @@ export function Sidebar() {
       </div>
 
       <div className="mt-8 px-3 py-4 rounded-lg bg-white/[0.04] border border-white/[0.06]">
-        <div className="font-pixel text-xs text-mint mb-1">&gt; SYSTEM_STATUS</div>
+        <div className="font-mono text-xs text-mint mb-1">&gt; SYSTEM_STATUS</div>
         <div className="font-mono text-xs text-canvas/70">
-          v1.0 — Night Operator
+          v1.0 — The Editor
         </div>
       </div>
     </aside>

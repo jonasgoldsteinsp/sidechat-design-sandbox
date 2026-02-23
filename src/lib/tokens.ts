@@ -1,6 +1,6 @@
 // ═══════════════════════════════════════════════════════
 // SIDECHAT DESIGN TOKENS
-// Night Operator + Editor aesthetic
+// The Editor — Elegant & Simplified
 // ═══════════════════════════════════════════════════════
 
 export const tokens = {
@@ -55,8 +55,8 @@ export const tokens = {
   typography: {
     fontFamily: {
       display: "'Fraunces', serif",
-      mono:    "'Courier Prime', monospace",
-      pixel:   "'VT323', monospace",
+      body:    "'DM Sans', sans-serif",
+      mono:    "'IBM Plex Mono', monospace",
       system:  "-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif",
     },
     fontWeight: {
@@ -77,7 +77,6 @@ export const tokens = {
       caption:   { size: "0.8rem", lineHeight: 1.5,  letterSpacing: "0" },
       footnote:  { size: "0.75rem", lineHeight: 1.4, letterSpacing: "0.01em" },
       label:     { size: "0.7rem", lineHeight: 1.3,  letterSpacing: "0.1em" },
-      pixel:     { size: "1.1rem", lineHeight: 1.3,  letterSpacing: "0.05em" },
     },
   },
 

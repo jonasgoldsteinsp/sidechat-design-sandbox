@@ -11,7 +11,7 @@ export default function PatternsPage() {
   return (
     <Container size="xl" className="py-12">
       <div className="mb-12">
-        <div className="font-pixel text-mint text-sm mb-4">&gt; PATTERNS</div>
+        <div className="font-mono text-mint text-sm mb-4">&gt; PATTERNS</div>
         <h1 className="text-display-lg mb-4">
           Design <em className="italic text-mint">Patterns</em>
         </h1>
@@ -32,7 +32,7 @@ export default function PatternsPage() {
           <PatternCard title="Landing Page" description="Hero-driven marketing page">
             <div className="bg-night-soft rounded-lg overflow-hidden border border-white/[0.08]">
               <div className="p-12 text-center bg-gradient-to-b from-mint/10 to-transparent">
-                <div className="font-pixel text-mint text-xs mb-4">&gt; TAGLINE</div>
+                <div className="font-mono text-mint text-xs mb-4">&gt; TAGLINE</div>
                 <h1 className="font-display text-4xl font-light mb-4">
                   Your Product <em className="italic text-mint">Here</em>
                 </h1>

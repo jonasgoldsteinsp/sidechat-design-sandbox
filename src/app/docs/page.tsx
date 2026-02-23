@@ -7,7 +7,7 @@ export default function DocsPage() {
   return (
     <Container size="xl" className="py-12">
       <div className="mb-12">
-        <div className="font-pixel text-mint text-sm mb-4">&gt; DOCUMENTATION</div>
+        <div className="font-mono text-mint text-sm mb-4">&gt; DOCUMENTATION</div>
         <h1 className="text-display-lg mb-4">
           Implementation <em className="italic text-mint">Guide</em>
         </h1>

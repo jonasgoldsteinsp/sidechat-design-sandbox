@@ -27,7 +27,7 @@ export default function ComponentsPage() {
   return (
     <Container size="xl" className="py-12">
       <div className="mb-12">
-        <div className="font-pixel text-mint text-sm mb-4">&gt; COMPONENTS</div>
+        <div className="font-mono text-mint text-sm mb-4">&gt; COMPONENTS</div>
         <h1 className="text-display-lg mb-4">
           Component <em className="italic text-mint">Library</em>
         </h1>
